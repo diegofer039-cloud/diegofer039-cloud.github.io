@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego — Desarrollador Frontend</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <div id="tron-bg"></div>
+  <canvas id="scroll-path"></canvas>
+  <canvas id="mouse-trail"></canvas>
+
+  <header>
+    <nav>
+      <a href="#inicio" class="logo">Diego</a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <canvas id="hero-particles"></canvas>
+      <div class="hero-content">
+        <span class="saludo">¡Hola! Soy</span>
+        <h1>Diego</h1>
+        <h2><span id="typing-text"></span><span class="cursor">|</span></h2>
+        <p>Construyo experiencias web con HTML, CSS, JavaScript y React.</p>
+        <div class="hero-botones">
+          <a href="#proyectos" class="btn btn-primario">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-secundario">Contacto</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="seccion">
+      <h2 class="titulo-seccion">Sobre mí</h2>
+      <div class="sobre-mi-contenido">
+        <div class="sobre-mi-texto">
+          <p>Estoy formándome como desarrollador frontend con <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y <strong>React</strong>. Dedico tiempo todos los días a aprender y construir.</p>
+          <p>Me gustan las interfaces limpias, el código ordenado y los proyectos que resuelven problemas reales.</p>
+          <div class="habilidades">
+            <h3>Habilidades</h3>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Vite</span>
+              <span class="tag">APIs REST</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion">
+      <h2 class="titulo-seccion">Proyectos</h2>
+      <div class="proyectos-grid">
+
+        <article class="tarjeta-proyecto">
+          <div class="tarjeta-header">
+            <h3>App del Clima</h3>
+          </div>
+          <p>Consulta el clima en tiempo real de cualquier ciudad del mundo. Consume la API de OpenWeatherMap y muestra temperatura, humedad y viento.</p>
+          <div class="tarjeta-footer">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">API</span>
+            <a href="https://github.com/diegofer039-cloud/app-clima" target="_blank" class="btn btn-chico">Repositorio</a>
+            <a href="https://diegofer039-cloud.github.io/app-clima" target="_blank" class="btn btn-chico">Demo</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="tarjeta-header">
+            <h3>Todo List App</h3>
+          </div>
+          <p>Lista de tareas con edición inline, categorías, fecha de vencimiento y filtros. Los datos persisten en localStorage.</p>
+          <div class="tarjeta-footer">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">localStorage</span>
+            <a href="https://github.com/diegofer039-cloud/todo-list-app" target="_blank" class="btn btn-chico">Repositorio</a>
+            <a href="https://diegofer039-cloud.github.io/todo-list-app" target="_blank" class="btn btn-chico">Demo</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="tarjeta-header">
+            <h3>Buscador de Películas</h3>
+          </div>
+          <p>Buscador de películas con React, TMDB API y paginación. Incluye favoritos, skeletons de carga y deploy automático con GitHub Actions.</p>
+          <div class="tarjeta-footer">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">API</span>
+            <span class="tag">CI/CD</span>
+            <a href="https://github.com/diegofer039-cloud/buscador-peliculas" target="_blank" class="btn btn-chico">Repositorio</a>
+            <a href="https://diegofer039-cloud.github.io/buscador-peliculas" target="_blank" class="btn btn-chico">Demo</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="tarjeta-header">
+            <h3>Trello Clone</h3>
+          </div>
+          <p>Tablero Kanban con drag & drop entre columnas usando @dnd-kit. Edición inline, persistencia en localStorage y diseño oscuro.</p>
+          <div class="tarjeta-footer">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">@dnd-kit</span>
+            <span class="tag">CI/CD</span>
+            <a href="https://github.com/diegofer039-cloud/trello-clone" target="_blank" class="btn btn-chico">Repositorio</a>
+            <a href="https://diegofer039-cloud.github.io/trello-clone" target="_blank" class="btn btn-chico">Demo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <h2 class="titulo-seccion">Contacto</h2>
+      <div class="contacto-contenido">
+        <p>Si querés charlar sobre desarrollo, proyectos o colaboraciones, escribime.</p>
+        <div class="contacto-links">
+          <a href="mailto:diegofer039@gmail.com" class="btn btn-primario">Email</a>
+          <a href="https://github.com/diegofer039-cloud" target="_blank" rel="noopener" class="btn btn-secundario">GitHub</a>
+          <a href="https://www.linkedin.com/in/diegofer039" target="_blank" class="btn btn-secundario">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Diego — Construido con HTML y CSS</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
